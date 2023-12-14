@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zeichenketten-Trennung</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    
-    
+
+    <div class="div__global">
+        <h1>Zeichentrennungsmaschinerie</h1>
+        <form action="#" onsubmit="cuttString()">
+            <label for="inputstring">Zeichenkette</label>
+            <input type="text" name="inputstring" id="inputstring">
+            <label for="cutstring">Woran trennen wir?</label>
+            <input type="text" name="cutstring" id="cutstring">
+            <div class="div__options">
+                <input type="radio" name="options" id="pre" value="pre_string">
+                <label for="pre">Davor</label>
+                <input type="radio" name="options" id="after" value="after_string">
+                <label for="after">Danach</label>
+            </div>
+        </form>
+        <p class="output" id="cutString_pre"></p>
+        <p class="output" id="cutString_after"></p>
+    </div>
 
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
