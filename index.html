@@ -12,7 +12,7 @@
 
     <div class="div__global">
         <h1>Zeichentrennungsmaschinerie</h1>
-        <form action="#" onsubmit="cuttString()">
+        <form action="#" onsubmit="cuttString(); return false">
             <label for="inputstring">Zeichenkette</label>
             <input type="text" name="inputstring" id="inputstring">
             <label for="cutstring">Woran trennen wir?</label>
@@ -23,9 +23,11 @@
                 <input type="radio" name="options" id="after" value="after_string">
                 <label for="after">Danach</label>
             </div>
+            <button type="submit">Check</button>
         </form>
         <p class="output" id="cutString_pre"></p>
         <p class="output" id="cutString_after"></p>
+        <p class="output" id="error"></p>
     </div>
 
     <script src="./assets/js/main.js"></script>
