@@ -1,0 +1,67 @@
+@mixin globalSetting {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin displaySettings($display, $direction, $content, $items, $self) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $items;
+    align-self: $self;
+}
+
+@mixin H1Effect($start, $middle, $end) {
+    animation: colorframe 2s linear 0s infinite forwards;
+    
+    @keyframes colorframe {
+        0% {
+            color: $start;
+        }
+        25% {
+            color: $middle;
+        }
+        75% {
+            color: $end;
+        }
+        100% {
+            color:$start;
+        }
+        
+    }
+}
+
+@mixin labelEffect($start, $middle, $end) {
+    animation: speed 5s linear 0s infinite forwards;
+
+
+    @keyframes speed {
+        0% {
+            transform: translate(0);
+            color: blue
+        }
+        15% {
+            transform: translate(calc($start * 0.5));
+            color: red;
+        }
+        35% {
+            transform: translate(calc($start * 0.65));
+            color: orange;
+        }
+        55% {
+            transform: translate($middle);
+            color: aquamarine
+        }
+        85% {
+            transform: translate(calc($end * (-.5)));
+            color: yellow
+        }
+        100% {
+            transform: translate(calc(0));
+            color: black;
+        }
+
+        
+    }
+}

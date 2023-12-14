@@ -1,3 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
 
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: "";
+}
+body h1 {
+  animation: colorframe 2s linear 0s infinite forwards;
+  margin-bottom: 1rem;
+}
+@keyframes colorframe {
+  0% {
+    color: rgb(173, 17, 17);
+  }
+  25% {
+    color: rgb(43, 189, 43);
+  }
+  75% {
+    color: rgb(52, 41, 195);
+  }
+  100% {
+    color: rgb(173, 17, 17);
+  }
+}
+body form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: "";
+  align-self: "";
+  gap: 1rem;
+}
+body form label {
+  text-align: center;
+  animation: speed 5s linear 0s infinite forwards;
+}
+@keyframes speed {
+  0% {
+    transform: translate(0);
+    color: blue;
+  }
+  15% {
+    transform: translate(75%);
+    color: red;
+  }
+  35% {
+    transform: translate(97.5%);
+    color: orange;
+  }
+  55% {
+    transform: translate(0%);
+    color: aquamarine;
+  }
+  85% {
+    transform: translate(-25%);
+    color: yellow;
+  }
+  100% {
+    transform: translate(0);
+    color: black;
+  }
+}
+body form input[type=text] {
+  color: white;
+  background-color: green;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+body form .div__options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: "";
+  align-self: "";
+}
+body form .div__options input[type=radio] {
+  margin: 0 1rem;
+}
+body form button {
+  color: white;
+  background-color: green;
+  border: none;
+  padding: 0.5rem 0;
+  border-radius: 1rem;
+}
+body .output {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: "";
+  align-self: "";
+  gap: 0.5rem;
+  animation: speed 5s linear 0s infinite forwards;
+}
+@keyframes speed {
+  0% {
+    transform: translate(0);
+    color: blue;
+  }
+  15% {
+    transform: translate(25%);
+    color: red;
+  }
+  35% {
+    transform: translate(32.5%);
+    color: orange;
+  }
+  55% {
+    transform: translate(0%);
+    color: aquamarine;
+  }
+  85% {
+    transform: translate(-25%);
+    color: yellow;
+  }
+  100% {
+    transform: translate(0);
+    color: black;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

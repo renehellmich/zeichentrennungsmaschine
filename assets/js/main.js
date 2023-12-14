@@ -54,7 +54,7 @@ const getSwitch = () => {
     let string = document.querySelector("#inputstring").value;
     let cutter = document.querySelector("#cutstring").value;
 
-    console.log("Aufruf getSwitch()", string, cutter, getOption);
+    console.log("Aufruf getSwitch()", string, cutter);
 
 
     switch(getQuery()) {
